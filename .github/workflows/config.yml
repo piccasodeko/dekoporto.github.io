@@ -1,4 +1,7 @@
-name: Deploy to GitHub Pages
+"scripts": {
+  "build": "vite build" 
+
+  name: Deploy to GitHub Pages
 
 on:
   push:
@@ -30,3 +33,5 @@ jobs:
         with:
           folder: dist # Change to 'build' if using Create React App
           branch: gh-pages
+
+}
